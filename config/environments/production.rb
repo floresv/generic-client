@@ -91,4 +91,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  Dir["#{Rails.root}/lib/*.rb"].each { |file| require file }
 end
