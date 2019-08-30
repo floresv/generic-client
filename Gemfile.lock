@@ -93,6 +93,10 @@ GEM
     jsonapi-serializers (1.0.1)
       activesupport
     jwt (2.2.1)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -150,6 +154,7 @@ GEM
       ffi (~> 1.0)
     rotp (5.1.0)
       addressable (~> 2.5)
+    ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -192,6 +197,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   forest_liana
   jbuilder (~> 2.5)
+  listen (>= 3.0.5, < 3.2)
   pg (~> 0.21)
   puma (~> 3.11)
   rails (~> 5.2.3)
