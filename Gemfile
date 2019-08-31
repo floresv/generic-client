@@ -22,6 +22,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'listen', '>= 3.0.5', '< 3.2'
 
+gem 'rack-cors'
 
 group :development do
   # # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
