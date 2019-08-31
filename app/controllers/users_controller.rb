@@ -3,6 +3,6 @@ class UsersController < ApplicationController
 
   def login
     return head :forbidden unless params['user'] == 'admin@email.com' && params['password'] == '12345'
-    head :no_content
+    render json: { access_token: 'aO2Z80ymbX' }
   end
 end
