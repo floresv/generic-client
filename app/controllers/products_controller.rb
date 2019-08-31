@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
         :meta_keywords,
         :tax_category_id,
         :shipping_category_id,
-        :count_on_hand,
+        :count_on_hand
       )
   end
 end
