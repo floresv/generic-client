@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    render_paginated Spree::Product #, each_serializer: Spree::ProductSerializer
+    render_paginated Spree::Product
   end
 
   def show
