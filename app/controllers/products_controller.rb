@@ -40,6 +40,16 @@ class ProductsController < ApplicationController
   def update_params
     params
       .require(:product)
-      .permit(:name, :description)
+      .permit(
+        :name,
+        :description,
+        :available_on,
+        :permalink,
+        :meta_description,
+        :meta_keywords,
+        :tax_category_id,
+        :shipping_category_id,
+        :count_on_hand,
+      )
   end
 end
