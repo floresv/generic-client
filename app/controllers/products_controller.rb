@@ -23,14 +23,14 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    return unprocessable_request(product.errors) unless product.destroy
+    return unprocessable_request(product.errors) unless product&.destroy
     head :ok
   end
 
   private
 
   def product
-    @product ||= Spree::Product.find_by(id: params.require(:id))
+    @product ||= Spree::Product.find_by_id!(params.require(:id))
   end
 
   def unprocessable_request(errors)

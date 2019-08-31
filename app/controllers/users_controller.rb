@@ -23,14 +23,14 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    return unprocessable_request(user.errors) unless user.destroy
+    return unprocessable_request(user.errors) unless user&.destroy
     head :ok
   end
 
   private
 
   def user
-    @user ||= Spree::User.find_by(id: params.require(:id))
+    @user ||= Spree::User.find_by_id!(params.require(:id))
   end
 
   def unprocessable_request(errors)
