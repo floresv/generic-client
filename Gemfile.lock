@@ -194,7 +194,7 @@ GEM
     useragent (0.16.10)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     wor-paginate (0.1.4)
       rails (>= 4.0)
       railties (>= 4.1.0, < 5.3)
